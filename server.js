@@ -50,6 +50,12 @@ app.get('/about', (req,res) => {
   });
 });
 
+app.get('/portafolio', (req,res) => {
+  res.render('portafolio.hbs',{
+    pageTitle: 'Portafolio Page Here'
+  });
+});
+
 app.get('/bad', (req,res) => {
   res.send({
   errorMessage: 'Error Handling this request'});
